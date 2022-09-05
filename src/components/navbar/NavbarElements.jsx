@@ -4,12 +4,10 @@ import { Link } from "react-router-dom";
 
 export const Navbar = styled.div`
   margin-bottom: 10px;
-  
-  
 
-  background: #8ca1a5;
+  background: #fff;
   width: 100%;
-  
+
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
@@ -17,19 +15,13 @@ export const Navbar = styled.div`
   position: fixed;
   top: 0;
   z-index: 999;
-  
 `;
 
 export const NavContainer = styled(Container)`
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-
   height: 80px;
-
- 
 `;
 
 export const NavLogo = styled(Link)`
@@ -44,7 +36,7 @@ export const NavLogo = styled(Link)`
 
 export const NavIcon = styled.img`
   margin-right: 0.5rem;
-  width: 40%;
+  width: 15%;
 `;
 
 export const MobileIcon = styled.div`
@@ -85,7 +77,7 @@ align-items:center; */
     left: ${({ click }) => (click ? 0 : "-100%")};
     opacity: 1;
     transition: all 0.5s ease;
-    background: #8CA1A5;
+    background: #8ca1a5;
   }
 `;
 
@@ -106,7 +98,6 @@ export const NavItems = styled.li`
 `;
 
 export const NavLinks = styled(Link)`
-
   color: #000;
   display: flex;
   cursor: pointer;
@@ -134,7 +125,6 @@ export const NavLinks = styled(Link)`
 `;
 
 export const NavItemBtn = styled.li`
-
   @media screen and (max-width: 960px) {
     display: flex;
     justify-content: center;
@@ -145,7 +135,8 @@ export const NavItemBtn = styled.li`
 `;
 
 export const YoungDiv = styled.div`
-  width: 100%;
+  width: 400px;
+
   height: 100%;
 
   display: flex;

@@ -11,7 +11,7 @@ import {
   NavMenu,
   NavItemBtn,
 } from "./NavbarElements";
-import logo from "../../Images/Logo_Fonciere_Truffaut.png";
+import logo from "../../Images/queirozImages/logos/02_Exports/01_JPEG/CMJN/Logo_Queiroz.jpg";
 import { FaTimes, FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { Button } from "../Button";
@@ -48,7 +48,7 @@ const NavBar2 = () => {
                       click={click}
                       to="/Operations"
                     >
-                      Opérations
+                      Réalisations
                     </NavLinks>
                   </NavItems>
                   <NavItemBtn to="/Contact">

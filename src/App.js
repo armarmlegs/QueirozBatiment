@@ -12,9 +12,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './components/Footer/Footer';
 import Operation from './Pages/Operation';
 import ContactPage from "./Pages/ContactPage"
-import JulesFerry from './Pages/JulesFerry/JulesFerry';
-import Lacroix from './Pages/Lacroix/Lacroix.jsx';
-import Malsherbes from './Pages/Malsherbes/Malsherbes';
+import Montmartre from './Pages/Montmartre/Montmartre.jsx';
+import TourMaubourg from './Pages/TourMaubourg/TourMaubourg';
+import SaintCloud from './Pages/SaintCloud/SaintCloud';
+import Scheffer from './Pages/Scheffer/Scheffer';
+import Boulogne from './Pages/Boulogne/Boulogne';
 
 
 
@@ -28,9 +30,11 @@ function App() {
   <Route path="/" exact component={Home} />
   <Route path="/Contact" exact component={ContactPage} />
   <Route path="/Operations" exact component={Operation} />
-  <Route path="/Operations/JulesFerry" exact component={JulesFerry} />
-  <Route path="/Operations/Malsherbes" exact component={Malsherbes} />
-  <Route path="/Operations/Lacroix" exact component={Lacroix} />
+  <Route path="/Operations/Boulogne" exact component={Boulogne} />
+  <Route path="/Operations/TourMaubourg" exact component={TourMaubourg} />
+  <Route path="/Operations/Montmartre" exact component={Montmartre} />
+  <Route path="/Operations/SaintCloud" exact component={SaintCloud} />
+  <Route path="/Operations/Scheffer" exact component={Scheffer} />
 </Switch>
 <Footer />
   </Router>

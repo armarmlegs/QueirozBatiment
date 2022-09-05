@@ -17,7 +17,7 @@ import {
   ContactArea,
   ImageWrapper
 } from "./ContactElements";
-import background from "../../Images/Photos Site Fonciere/Jules-Ferry/2ème étage/IMG_2707.jpg"
+import background from "../../Images/queirozImages/SELECTION SITE/Scheffer/016.jpg"
 import {Button2} from "../Button2";
 const serviceId = "service_zbztet6";
 const templateId = "template_xsdfrjk";

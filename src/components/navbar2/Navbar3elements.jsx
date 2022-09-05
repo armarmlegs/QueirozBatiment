@@ -18,12 +18,14 @@ top:0;
 z-index:999;
 
 
+
 `
 
 export const NavContainer = styled(Container)`
 display:flex;
 justify-content:space-between;
 height:80px;
+
 
 ${Container}
 

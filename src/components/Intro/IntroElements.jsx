@@ -39,4 +39,16 @@ export const VideoBg = styled.video`
   }
 `;
 
+
+export const BannBG = styled.img`
+width: 100%;
+height: 100%;
+object-fit: cover;
+background: #fff;
+@media screen and (max-width: 768px) {
+  /* object-fit:scale-down; */
+}
+
+`
+
 console.log("hello");

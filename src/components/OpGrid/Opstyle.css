@@ -1,18 +1,10 @@
 .youngContainer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
- 
- 
+display:flex;
+flex-wrap:wrap;
+padding:10px;
+justify-content: space-around;
+align-items: center;
 
-  padding-bottom: 100px;
-  /* min-height: 1200px; */
-
-  /* height:30%; */
-  /* padding: 20px 0; */
-  /* padding-bottom: 90px; */
 }
 
 .wrappy {
@@ -25,28 +17,27 @@
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  /* min-height: 100%; */
+  width: 300px;
+  object-fit: cover;
 }
 
 .vignettes {
-  /* display: block; */
+  
   position:relative;
-  height: 500px;
+  height: 450px;
   width: 100%;
-  /* margin-right: 50px;
-  margin-left: 50px; */
-  object-fit: cover;
-
   cursor: pointer;
+  object-fit: cover;
 }
-
+/*
 .carte{
   position:absolute;
   top:0;
   right:0;
-  background-color:REd;
+  background-color:#fff;
   color:white;
 }
+*/
 
 .imgLayer {
   /* 
@@ -58,9 +49,8 @@
 
   /* 
    */
-
-  position: absolute;
-  top: 0;
+   position: absolute; 
+   top: 0; 
 
   background: white;
   color: black;
@@ -72,6 +62,8 @@
   transition: opacity 0.2s, visibility 0.2s;
   height: 100%;
   width: 100%;
+  border:1px solid red;
+  
 }
 
 .wrappy:hover .imgLayer {
@@ -87,7 +79,8 @@
 }
 
 .opName {
-  color:#6D8299;;
+  
+  color:#6D8299;
   
   transition: 0.2s;
   transform: translateY(1em);
@@ -95,10 +88,11 @@
 
   border-top: 1px solid;
   border-bottom: 1px solid;
-  font-size: 40px;
+  font-size: 30px;
   width: 100%;
-  /* padding: 15px; */
+  padding: 15px;
   background: white;
+  object-fit: contain;
 }
 
 .wrappy:hover .opName {
@@ -109,8 +103,12 @@
 
 @media (max-width: 991px) {
   .vignettes {
-    height: 400px;
-    width: 300px;
+    object-fit:cover;
+    height: 200px;
+    width:200px;
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows: auto;
   }
 }
 
@@ -126,11 +124,15 @@
 .lego {
   /* padding: 10px 100px; */
   color: #6d8299;
+  display: flex;
+  justify-content: center;
+  z-index: index 999;
 
   font-size: 20px;
   text-align: center;
   visibility: hidden;
   font-weight: 200;
+  margin: 0 20px;
 }
 
 .lego:hover {
@@ -145,6 +147,5 @@
 
 .ghostdiv {
   padding-bottom: 100px;
-  
   min-height:100%
 }

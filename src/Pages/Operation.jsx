@@ -21,10 +21,10 @@ const Operation = () => {
     <div>
       <NavBar />
       <WrapperForReal>
-      <OpTitle>Nos Opérations</OpTitle>
+      <OpTitle>Nos Réalisations</OpTitle>
       </WrapperForReal>
       
-      <OpGrid dataImg={PicsOperation} />
+     { <OpGrid dataImg={PicsOperation} />}
       
     
     </div>

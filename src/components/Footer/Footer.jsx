@@ -1,7 +1,7 @@
 import React from "react";
 
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa"
-import logo from "../../Images/Logo_Fonciere_Truffaut.png";
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import logo from "../../Images/queirozImages/logos/02_Exports/02_PNG/CMJN/Logo_Queiroz.png";
 import {
   FooterContainer,
   FooterWrapper,
@@ -24,68 +24,51 @@ import { Container } from "../../globalStyles";
 const Footer = () => {
   return (
     <>
-    <Container>
-      <FooterContainer>
-        <FooterWrapper>
-          {/* <FooterLinksContainer>
-            <FooterLinksWrapper>
-              <FooterLinkItems>
-                <FooterLinkTitle> Categories</FooterLinkTitle>
-                <FooterLink to="/Operations">Opérations</FooterLink>
-                <FooterLink to="/">A propos</FooterLink>
-                <FooterLink to="/Contact">Contact</FooterLink>
-              </FooterLinkItems>
-              <FooterLinkItems>
-                <FooterLinkTitle> Addresse</FooterLinkTitle>
-                <FooterAddy> <GoLocation /> 17 rue Truffaud, 75017, Paris, France </FooterAddy>
-               
-              </FooterLinkItems>
-            </FooterLinksWrapper>
-          </FooterLinksContainer> */}
-          <SocialMedia>
-            <SocialMediaWrapper>
-              <SocialLogo to="/">
-                {" "}
-                <FooterLogo src={logo} alt="wassup" />
-              </SocialLogo>
+      <Container>
+        <FooterContainer>
+          <FooterWrapper>
+            <SocialMedia>
+              <SocialMediaWrapper>
+                <SocialLogo to="/">
+                  {" "}
+                  <FooterLogo src={logo} alt="wassup" />
+                </SocialLogo>
 
-              <WebsiteRights>
-              Foncière Truffaut-72 rue Truffaut-75017 Paris
-              </WebsiteRights>
-              <SocialIcons>
-                <SocialIconLink
-                  href="//www.facebook.com"
-                  target="_blank"
-                  aria-label="Facebook"
-                >
-                  <FaFacebook />
-                </SocialIconLink>
-                <SocialIconLink
-                  href="//www.instagram.com"
-                  target="_blank"
-                  aria-label="Instagram"
-                >
-                  <FaInstagram />
-                </SocialIconLink>
-                <SocialIconLink
-                  href="//www.youtube.com"
-                  target="_blank"
-                  aria-label="Youtube"
-                >
-                  <FaYoutube />
-                </SocialIconLink>
-                <SocialIconLink
-                  href="//www.twitter.com"
-                  target="_blank"
-                  aria-label="Twitter"
-                >
-                  <FaTwitter />
-                </SocialIconLink>
-              </SocialIcons>
-            </SocialMediaWrapper>
-          </SocialMedia>
-        </FooterWrapper>
-      </FooterContainer>
+                <WebsiteRights>72 rue Truffaut-75017 Paris</WebsiteRights>
+                <SocialIcons>
+                  <SocialIconLink
+                    href="//www.facebook.com"
+                    target="_blank"
+                    aria-label="Facebook"
+                  >
+                    <FaFacebook />
+                  </SocialIconLink>
+                  <SocialIconLink
+                    href="//www.instagram.com"
+                    target="_blank"
+                    aria-label="Instagram"
+                  >
+                    <FaInstagram />
+                  </SocialIconLink>
+                  <SocialIconLink
+                    href="//www.youtube.com"
+                    target="_blank"
+                    aria-label="Youtube"
+                  >
+                    <FaYoutube />
+                  </SocialIconLink>
+                  <SocialIconLink
+                    href="//www.twitter.com"
+                    target="_blank"
+                    aria-label="Twitter"
+                  >
+                    <FaTwitter />
+                  </SocialIconLink>
+                </SocialIcons>
+              </SocialMediaWrapper>
+            </SocialMedia>
+          </FooterWrapper>
+        </FooterContainer>
       </Container>
     </>
   );

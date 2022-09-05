@@ -4,16 +4,19 @@ import {
   IntroBg,
   IntroContainer,
   VideoBg,
+  BannBG
  
 } from "./IntroElements";
 import Video from "../../Images/Videos/Video Fonciere/Fonciere Signature.mp4"
+import Img from '../../Images/queirozImages/SELECTION SITE/Montmartre/CLICHY (28 sur 176).jpg'
 
 
 const Intro = () => {
   return (
     <IntroContainer>
       <IntroBg>
-        <VideoBg autoPlay muted src={Video} type="video/mp4"></VideoBg>
+    
+        <BannBG src={Img}></BannBG>
        
       </IntroBg>
       
