@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.footer`
   position: fixed;
+  z-index:999;
   bottom: 0;
   width: 100%;
   max-height: 100%;
   /* box-sizing:border-box; */
-  background-color: #8ca1a5;
-
+  /*background-color: #8ca1a5;*/
+  background-color: #f9F9F9;
+  opacity: 0.9;
   /* width: 100%; */
 
   /* position:relative; */
@@ -23,7 +25,7 @@ export const FooterContainer = styled.footer`
   align-content: flex-end;
 
   @media screen and (max-width: 750px) {
-    width: 100%;
+   
     height: 40px;
   }
 `;
@@ -128,6 +130,7 @@ export const SocialLogo = styled(Link)`
   margin-bottom: 16px;
   font-weight: bold;
   max-width: 30%;
+  padding-right
   height:auto;
 
   &:hover {
@@ -139,17 +142,19 @@ export const SocialLogo = styled(Link)`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 240px;
+ 
   }
 `;
 
-export const WebsiteRights = styled.small`
+export const WebsiteRights = styled.p`
   color: #000;
-  font-size: 30px;
-  /*  margin-bottom: 16px;
-  padding-left: 20px;
+  font-size: 24px;
+  max-width:600px;
+
+  margin-bottom:0;
+  /* 
   text-align: center; */
-  /* width: 100%; */
+  width: 100%; 
  
   @media screen and (min-width: 860px) {
     padding-right: 160p  !important;
@@ -166,9 +171,8 @@ export const WebsiteRights = styled.small`
 
   @media screen and (max-width: 650px) {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    font-size: 9px;
+    font-size: 10px;
     /* width: 200px; */
   }
 `;
@@ -178,10 +182,6 @@ export const SocialIcons = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 240px;
-
-  @media screen and (max-width: 650px) {
-    width: 100px;
-  }
 `;
 
 export const SocialIconLink = styled.a`
@@ -195,9 +195,9 @@ export const SocialIconLink = styled.a`
 `;
 
 export const FooterLogo = styled.img`
-  margin-left: 0;
+  margin-left: 0px;
   margin-bottom: -23px;
-  width: 20%;
+  width: 30%;
 
   &:hover {
     color: #01bf71;

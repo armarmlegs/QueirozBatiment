@@ -24,7 +24,7 @@ import { Container } from "../../globalStyles";
 const Footer = () => {
   return (
     <>
-      <Container>
+     
         <FooterContainer>
           <FooterWrapper>
             <SocialMedia>
@@ -69,7 +69,7 @@ const Footer = () => {
             </SocialMedia>
           </FooterWrapper>
         </FooterContainer>
-      </Container>
+      
     </>
   );
 };
